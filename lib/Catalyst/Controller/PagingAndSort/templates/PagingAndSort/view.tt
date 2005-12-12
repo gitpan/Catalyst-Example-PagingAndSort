@@ -1,0 +1,8 @@
+
+[% FOR column = item.columns %]
+    [% NEXT IF column == item.primary_column %]
+    <b>[% column %]</b><br/>
+    [% item.$column %]<br/><br/>
+[% END %]
+<a href="[% base _ table_name _ '/list' %]">List</a>
+

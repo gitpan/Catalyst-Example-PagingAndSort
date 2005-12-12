@@ -1,0 +1,12 @@
+
+<form action="[% base _ table_name _ '/do_edit/' _ item.id %]"
+    method="post">
+    [% FOR column = item.columns %]
+        [% NEXT IF column == item.primary_column %]
+        [% column %]<br/>
+        [% item.to_field(column).as_XML %]<br/>
+    [% END %]
+    <input type="submit" value="Edit"/>
+<form/>
+<br/>
+<a href="[% base _ table_name _ '/list' %]">List</a>

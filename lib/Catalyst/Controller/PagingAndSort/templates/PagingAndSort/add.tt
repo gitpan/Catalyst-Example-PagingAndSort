@@ -1,0 +1,12 @@
+
+[% USE table_class = Class(table_class) %]
+<form action="[% base _ table_name _ '/do_add' %]" method="post">
+    [% FOR column = table_class.columns %]
+        [% NEXT IF column == table_class.primary_column %]
+        [% column %]<br/>
+        [% table_class.to_field(column).as_XML %]<br/>
+    [% END %]
+    <input type="submit" value="Add"/>
+<form/>
+<br/>
+<a href="[% base _ table_name _ '/list' %]">List</a>

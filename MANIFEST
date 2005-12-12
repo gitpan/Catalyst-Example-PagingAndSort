@@ -1,0 +1,18 @@
+Changes
+MANIFEST
+META.yml # Will be created by "make dist"
+Makefile.PL
+README
+script/pagingandsort.pl
+lib/Catalyst/Helper/Model/CDBISweet.pm
+lib/Catalyst/Helper/Controller/PagingAndSort.pm
+lib/Catalyst/Controller/PagingAndSort/templates/PagingAndSort/wrapper.tt
+lib/Catalyst/Controller/PagingAndSort/templates/PagingAndSort/edit.tt
+lib/Catalyst/Controller/PagingAndSort/templates/PagingAndSort/list.tt
+lib/Catalyst/Controller/PagingAndSort/templates/PagingAndSort/add.tt
+lib/Catalyst/Controller/PagingAndSort/templates/PagingAndSort/view.tt
+lib/Catalyst/Controller/PagingAndSort.pm
+lib/Catalyst/Example/PagingAndSort.pm
+t/00.load.t
+t/pod-coverage.t
+t/pod.t
